@@ -1,5 +1,5 @@
 
-/* var nombre= "Hotel Kanaki";
+ /* var nombre= "Hotel Kanaki";
 var ubicacion= "Costa Rica";
 var img= "https://www.costarica.org/wp-content/uploads/2014/12/Kenaki-Lodge-Bungalow-Garden.jpg";
 
@@ -14,9 +14,9 @@ document.getElementById("imagen").src = img;
 var ranking = prompt("Puntuación del 1 al 5");
 document.getElementById("ranking").innerHTML = ranking +" estrellas";
 
-anonimo
-var siNo =confirm("Quieres que la reseña sea anonima?");
-document.getElementById("anonimo").checked = siNo; */
+anonimo */
+ var siNo =confirm("Quieres que la reseña sea anonima?");
+document.getElementById("anonimo").checked = siNo; 
 
 var hoteles ={
     Kanaki:{
@@ -40,4 +40,14 @@ document.getElementById("hotel-location").innerHTML = "Ubicado en "+ hoteles[sel
 document.getElementById("imagen").src = hoteles[selectorHotel].img;
 
 
+var star ={
+    una: "<span>&#9733;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>",
+    dos:"<span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>",
+    tres:"<span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span>",
+    cuatro:"<span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>",
+    cinco:"<span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>",
+    };
 
+var ranking = prompt("Indica puntuación: una,dos,tres,cuatro o cinco");
+
+document.getElementById("ranking").innerHTML = star[ranking];

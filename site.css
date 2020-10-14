@@ -17,11 +17,11 @@ margin:0 16px;
     padding: 16px;
     box-sizing: border-box;
 }
-.image{
+#image{
     height: 200px;
-    width: 400px;
+    width: 200px;
 }
-.star.span{
+.star#span{
     color: chocolate;
     font-size: 20px;
 }
